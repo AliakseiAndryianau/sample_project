@@ -1,11 +1,17 @@
 name: Rubocop Linter
 
+on:
+  push:
+    branches-ignore:
+      - 'master'
+
 jobs:
   lint:
     runs-on: ubuntu-18.04
+
     steps:
       - name: Checkout Code
-      uses: actions/checkout@v2
+        uses: actions/checkout@v2
 
       - name: Rubocop linter
         uses: andrewmcodes/rubocop-linter-actions@v3.2.0
