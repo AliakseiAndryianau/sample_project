@@ -8,4 +8,5 @@ class ApplicationCable::ConnectionTest < ActionCable::Connection::TestCase
   #
   #   assert_equal connection.user_id, "42"
   # end
+  let!(:test_subject) { 'do something' }
 end
