@@ -4,7 +4,7 @@ on: [pull_request]
 
 jobs:
   lint:
-    name: all linters
+    name: Rubocop
     runs-on: ubuntu-18.04
     strategy:
       fail-fast: true
