@@ -13,5 +13,5 @@ jobs:
       - uses: ruby/setup-ruby@v1
         with:
           bundler-cache: true
-      name: rubocop
+      - name: rubocop
         run: bundle exec rubocop --parallel
